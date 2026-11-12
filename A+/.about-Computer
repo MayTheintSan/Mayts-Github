@@ -1,17 +1,55 @@
-Computer is firstly invented around 1950s but at that time the computer has very huge combination. 
-The people only like programmer and computer related job use it. 
-At 1971 when is the time the intel company is founded. They built the CPU with plenty tinny of transistors. 
-because of it the carriable computer are appeared.
-Around 1980s, IBM company also founded and built CPU.
-So now 2026, it is around 70 years for the computers.
-During these time, the computer has different shape and design but they always do the same function (input => processing => output). some also talked about storage. 
-The input devices (mouse, keyboard) give the instruction to the processing units and show up the result as the output.
-Input ===(instruction)===> | Processing | ===(result)===> output
-| Input | processing | Output |
-|-------|------------|--------|
-| mouse,keyboard | RAM, CPU, GPU, Storage Drives | display,speaker |
-- RAM = Random Access Memory
-- CPU = Central Processing Unit
-- GPU = Graphical Processing Unit
-- HDD = Hard Disk Drive
-- SSD = Solid State Drive
+# Introduction to Computers & Processing Workflow
+
+Computers were first invented in the mid-1940s and became commercially available in the 1950s. At that time, they were massive machines built with huge combinations of components, used almost exclusively by programmers and specialists in computer-related fields.
+
+* 1971 (The Microprocessor Era): Intel (founded in 1968) released the first commercial single-chip CPU (the Intel 4004) packed with thousands of tiny transistors. This breakthrough made smaller, portable computers possible.
+* 1980s (The PC Era): In 1981, IBM (founded in 1911) released the IBM Personal Computer using an Intel CPU, bringing computers into everyday homes and offices.
+
+Now, in 2026 — over 70 years later—computers have evolved into vastly different shapes, sizes, and designs, yet they still perform the exact same core function: Input $\rightarrow$ Processing $\rightarrow$ Output (supported by Storage).
+
+---
+
+## Core Function & Hardware Overview
+
+Input devices (like a mouse or keyboard) send instructions to the processing units, which compute the data and display the final result through output devices.
+
+`Input` ===(Instruction) ===> `Processing` === (Result) ===> `Output`
+
+| Stage | Components |
+| :--- | :--- |
+| Input | Mouse, Keyboard |
+| Processing & Storage | CPU, RAM, GPU, Storage Drives (HDD / SSD) |
+| Output | Display (Monitor), Speaker |
+
+### Key Hardware Acronyms
+* RAM: Random Access Memory
+* CPU: Central Processing Unit
+* GPU: Graphics Processing Unit
+* HDD: Hard Disk Drive
+* SSD: Solid State Drive
+
+---
+
+## Example Workflow: Opening a YouTube Window
+
+When a user clicks to open YouTube, data moves between the input, processing, storage, and output components in a specific sequence:
+
+`Input (User Click)` === (Instruction) ===> `Processing (RAM, CPU, GPU, Storage)` === (Result) ===> `Output (YouTube Window)`
+
+### Step-by-Step Component Breakdown
+
+1. RAM: Receives the initial `user click` instruction from the input device
+2. CPU: Reads the `user click` from RAM
+3. CPU: Calculates the cursor's direction and coordinates (`x, y axis`)
+4. CPU: Identifies that the `user clicked YouTube (YT)`
+5. CPU: Determines that `YT data is needed` to open the program and send the signal to RAM
+6. RAM: Registers the request for `YT data (needed by CPU)` and send the signal to the storage device
+7. Storage Device (HDD/SSD): Receives the request that `YT data is needed`
+8. Storage Device (HDD/SSD): Finds and sends the `YT data` to memory RAM
+9. RAM: Receives and holds the `YT data (sent by Storage Device)` and send to CPU for calculation
+10. CPU: Receives the `YT data` from RAM
+11. CPU: Calculates the layout and `x, y axis` positioning according to the YT data and send it to RAM
+12. RAM: Stores the `x, y axis layout data (processed by CPU)` and send it to GPU
+13. GPU: Retrieves the `x, y axis data` to handle visual rendering
+14. GPU: Converts the data into `graphical YT data` (visual frames) and send it back to RAM
+15. RAM: Holds the final `graphical YT data` ready to be sent to the display (Output)
